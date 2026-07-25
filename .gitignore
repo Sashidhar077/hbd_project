@@ -1,0 +1,43 @@
+# --------------------------------------------------
+# Simulation Output
+# --------------------------------------------------
+*.vcd
+*.vvp
+*.out
+*.log
+*.jou
+*.wdb
+
+# GTKWave
+*.gtkw
+
+# Icarus Verilog
+a.out
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache (if any scripts are added later)
+__pycache__/
+
+# Temporary folders
+simulation/output/
+simulation/waveforms/
+
+# Vivado (if used later)
+*.cache
+*.hw
+*.runs
+*.sim
+*.ip_user_files
+*.Xil
+*.str
