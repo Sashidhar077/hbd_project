@@ -1,7 +1,7 @@
 
 module generator_counter(
         input i_clk,i_rst,i_tx_done,
-        output [9:0]o_counter
+        output reg [9:0]o_counter
 );
 
 
