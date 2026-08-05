@@ -17,6 +17,14 @@ generator_counter DUT (
 
 always #5 clk = ~clk;
 
+
+    initial
+    begin
+        $dumpfile("data_generator.vcd");
+        $dumpvars(0, tb_generator_counter);
+    end
+
+
 initial begin
 
     clk = 0;
