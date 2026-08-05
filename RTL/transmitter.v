@@ -71,8 +71,7 @@ module transmitter (
                 // Shift right
                 shift_reg <= shift_reg >> 1;
 
-                // Increment bit counter
-                bit_count <= bit_count + 1'b1;
+               
 
                 // Transmission complete
                 if (bit_count == 4'd9) begin
