@@ -3,30 +3,24 @@ module hit_counter(
     input         i_clk,
     input         i_rst,
     input         i_hit,
-
+    input         i_one_sec_tick,
     output reg [9:0] o_hit_count
 
 );
 
-    always @(posedge i_clk)
-    begin
+   always @(posedge i_clk)
+begin
 
-        if(i_rst)
-        begin
-            o_hit_count <= 10'd0;
-        end
+    if(i_rst)
+        o_hit_count <= 0;
 
-        else
-        begin
+    else if(i_one_sec_tick)
+        o_hit_count <= 0;
 
-            if(i_hit)
-            begin
-                o_hit_count <= o_hit_count + 1'b1;
-            end
+    else if(i_hit)
+        o_hit_count <= o_hit_count + 1;
 
-        end
-
-    end
+end
 
 endmodule
 
