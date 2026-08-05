@@ -7,7 +7,7 @@ module generator_counter(
 
 always@(posedge i_clk) begin 
         if(i_rst) begin 
-            o_counter = 10'd0;
+            o_counter <= 10'd0;
         end
         else if(i_tx_done) begin 
             o_counter<=o_counter+10'd1;
