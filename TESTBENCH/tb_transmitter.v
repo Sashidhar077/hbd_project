@@ -50,6 +50,24 @@ module tb_transmitter;
 
         #120;
 
+         i_rst      = 1'b1;
+        i_tx_ena_n = 1'b1;
+        i_data     = 10'd200;
+
+        #20;
+        i_rst = 1'b0;
+
+        #10;
+        i_tx_ena_n = 1'b0;
+
+        #10;
+        i_tx_ena_n = 1'b1;
+
+        #120;
+
+
+
+
         $finish;
 
     end
