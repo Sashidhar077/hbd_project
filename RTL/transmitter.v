@@ -74,12 +74,16 @@ module transmitter (
                 // Increment bit counter
                 bit_count <= bit_count + 1'b1;
 
-                // Transmission complete?
+                // Transmission complete
                 if (bit_count == 4'd9) begin
                     tx_valid  <= 1'b0;
                     o_tx_done <= 1'b1;
+                    bit_count <= 4'd0;
                 end
-            
+                else
+                begin
+                    bit_count <= bit_count + 1'b1;
+                end
 
             end
 
