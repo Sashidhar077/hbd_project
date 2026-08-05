@@ -65,6 +65,6 @@ module tb_transmitter;
                   i_tx_ena_n,
                   o_tx_serial,
                   o_tx_done);
-    end
+    end 
 
 endmodule
