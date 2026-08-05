@@ -77,7 +77,7 @@ module tb_display_latch;
     end
 
     initial
-    begin
+    begin   
 
         $display("-------------------------------------------------------------");
         $display(" Time  Tick  HitCount  DisplayCount  Valid");
