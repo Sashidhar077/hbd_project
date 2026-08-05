@@ -1,7 +1,7 @@
 
 
 module pattern_detector #(
-    parameter BIRTHDAY_PATTERN = 9'b011101010
+    parameter BIRTHDAY_PATTERN = 9'b000000001
 )(
     input [8:0] i_shift_data,
     output o_hit
