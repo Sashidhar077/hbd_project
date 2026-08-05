@@ -86,7 +86,7 @@ receiver u_receiver(
 
 pattern_detector
 #(
-.BIRTHDAY_PATTERN(9'b000000001)
+.BIRTHDAY_PATTERN(9'b011101010)
 )
 u_detector(
 
