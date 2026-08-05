@@ -79,11 +79,7 @@ module transmitter (
                     tx_valid  <= 1'b0;
                     o_tx_done <= 1'b1;
                 end
-                else begin
-                    bit_count <= bit_count + 1'b1;
-                    shift_reg <= shift_reg >> 1;
-                    o_tx_serial <= shift_reg[0];
-                end
+            
 
             end
 
