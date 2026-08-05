@@ -99,5 +99,15 @@ module tb_top;
                  o_hit_count);
 
     end
+    initial begin
+    $monitor(
+        "Time=%0t  Gen=%0d  RX=%b  Hit=%b  Count=%0d",
+        $time,
+        DUT.tx_data,
+        DUT.rx_data,
+        DUT.hit,
+        DUT.hit_count
+    );
+end
 
 endmodule
